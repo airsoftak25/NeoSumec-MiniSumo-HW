@@ -1085,6 +1085,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 35.56) (xy 161.29 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "472bf149-1bda-4b63-9434-05b2d16b54a3")
+	)
+	(wire
+		(pts
 			(xy 102.87 31.75) (xy 102.87 40.64)
 		)
 		(stroke
@@ -1186,6 +1196,28 @@
 		(uuid "53f8f89a-20cb-4ad5-b66f-7fc7030bd9c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 34.8124 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VBus_USB"
+		(shape input)
+		(at 161.29 35.56 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "588ec345-ff3c-410e-94db-d6bea956a21a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.29 46.5614 90)
 			(effects
 				(font
 					(size 1.27 1.27)
