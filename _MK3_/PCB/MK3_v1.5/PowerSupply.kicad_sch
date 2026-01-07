@@ -2928,16 +2928,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 52.07) (xy 171.45 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32b26df8-422e-4bb8-90c7-ec09ee795870")
-	)
-	(wire
-		(pts
 			(xy 92.71 95.25) (xy 90.17 95.25)
 		)
 		(stroke
@@ -3255,16 +3245,6 @@
 			(type default)
 		)
 		(uuid "8ab2ab3d-70d2-44e5-b427-a1d14148173f")
-	)
-	(wire
-		(pts
-			(xy 171.45 41.91) (xy 171.45 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d0c7894-55be-49f5-a208-26e4c8429118")
 	)
 	(wire
 		(pts
@@ -5836,76 +5816,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 171.45 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "148cc9fb-59ac-4e0c-9649-a6bcf321452c")
-		(property "Reference" "R5"
-			(at 173.99 45.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 173.99 48.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 169.672 46.99 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 171.45 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa53c905-17cc-4b37-9f98-edefe01a28ca")
-		)
-		(pin "2"
-			(uuid "2ac9ab3f-d170-43cf-8971-09cc6dd3b760")
-		)
-		(instances
-			(project "MK3_v1.5"
-				(path "/899e19a4-a8ef-484e-b5cf-c14e7264181f/280ed9a1-d429-455a-b1b6-c044f3773209"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 250.19 97.79 0)
 		(unit 1)
@@ -7946,85 +7856,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 171.45 38.1 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "799aa217-d865-42a8-b877-389b745e5c3b")
-		(property "Reference" "D5"
-			(at 175.26 38.4174 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 175.26 40.9574 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 171.45 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 171.45 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 171.45 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6b800685-11ec-4e41-a1c3-104e810c8b9d")
-		)
-		(pin "1"
-			(uuid "598f7c57-451b-45c0-b737-cc587f014552")
-		)
-		(instances
-			(project "MK3_v1.5"
-				(path "/899e19a4-a8ef-484e-b5cf-c14e7264181f/280ed9a1-d429-455a-b1b6-c044f3773209"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 161.29 52.07 0)
 		(unit 1)
@@ -8388,72 +8219,6 @@
 			(project "MK3_v1.5"
 				(path "/899e19a4-a8ef-484e-b5cf-c14e7264181f/280ed9a1-d429-455a-b1b6-c044f3773209"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 171.45 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9aeb3a7d-f2ba-4876-9dd6-8dd36e73375e")
-		(property "Reference" "#PWR011"
-			(at 171.45 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 171.45 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3432ce63-f261-4e47-8213-6d460c30fb04")
-		)
-		(instances
-			(project "MK3_v1.5"
-				(path "/899e19a4-a8ef-484e-b5cf-c14e7264181f/280ed9a1-d429-455a-b1b6-c044f3773209"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
