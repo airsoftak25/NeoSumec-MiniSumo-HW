@@ -1,0 +1,57 @@
+# KiCad temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+*-save.kicad_pcb
+*-save.sch
+
+# Autosave files
+*_autosave-*.kicad_sch
+*_autosave-*.kicad_pcb
+
+# Lock files
+*.lck
+
+# ❌ NEignorujeme Gerbery (ty chceš commitovat)
+# *.gbr
+# *.gerber
+# *.drl
+# *.drl.map
+# *.d356
+# *.rpt
+# *.pos
+# *.csv
+
+# 3D exporty (většinou generované)
+# *.step
+# *.stp
+*.wrl
+
+# Cache a temp soubory
+.kicad_prl
+.kicad_pro-bak
+fp-info-cache
+*.cache
+__pycache__/
+
+# (POZOR) knihovní tabulky – většinou lokální nastavení
+.sym-lib-table
+.fp-lib-table
+
+# Dočasné složky
+/tmp/
+/out/
+/build/
+
+# OS soubory
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo

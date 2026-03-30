@@ -1,10 +1,56 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
-	(uuid 9e88de0f-3b60-48fb-b244-fba2a5cbc7b8)
+	(generator_version "10.0")
+	(uuid "9e88de0f-3b60-48fb-b244-fba2a5cbc7b8")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 21.59 21.59)
+		(size 35.56 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b96f6201-6610-41c3-9037-bb3b3435b4ff")
+		(property "Sheetname" "Senzors"
+			(at 21.59 20.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "senzors.kicad_sch"
+			(at 21.59 51.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "NeoSumec_MK-1"
+				(path "/9e88de0f-3b60-48fb-b244-fba2a5cbc7b8"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
