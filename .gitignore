@@ -40,6 +40,8 @@ __pycache__/
 .sym-lib-table
 .fp-lib-table
 
+*.history
+
 # Dočasné složky
 /tmp/
 /out/
