@@ -16,7 +16,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "V1.0.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -261,7 +261,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "neo_sumec_symbols"
+    ]
   },
   "meta": {
     "filename": "NeoSumec_MK-1.kicad_pro",
@@ -428,17 +430,13 @@
         "uuid": "9e88de0f-3b60-48fb-b244-fba2a5cbc7b8"
       }
     ],
-    "used_designators": "J1-2,#PWR1-2",
+    "used_designators": "SW1,C7-11,IC2,R2-3,#PWR29-40,JPL1",
     "variants": []
   },
   "sheets": [
     [
       "9e88de0f-3b60-48fb-b244-fba2a5cbc7b8",
       "NeoSumec_MK-1"
-    ],
-    [
-      "b96f6201-6610-41c3-9037-bb3b3435b4ff",
-      "Senzors"
     ]
   ],
   "text_variables": {},

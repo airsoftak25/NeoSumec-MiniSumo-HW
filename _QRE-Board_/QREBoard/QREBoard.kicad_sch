@@ -4774,7 +4774,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom"
 			(at 246.38 100.33 0)
 			(hide yes)
 			(show_name no)
