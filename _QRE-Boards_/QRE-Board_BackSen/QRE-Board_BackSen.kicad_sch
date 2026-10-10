@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "b87002f5-a8a1-4b67-96d0-06c828c340f4")
 	(paper "A4")
+	(title_block
+		(title "Back QRE senzor for MiniSumo robot")
+		(date "05.10.2026")
+		(company "Maded by Vadim Sobčuk")
+		(comment 1 "RoboCrew - Prosek")
+	)
 	(lib_symbols
 		(symbol "Device:R"
 			(pin_numbers
@@ -145,7 +151,130 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor_Proximity:QRE1113GR"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Sensor_Proximity:QRE1113"
 			(pin_names
 				(offset 0.0254)
 				(hide yes)
@@ -165,8 +294,8 @@
 					)
 				)
 			)
-			(property "Value" "QRE1113GR"
-				(at 11.43 5.08 0)
+			(property "Value" "QRE1113"
+				(at 8.89 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -176,7 +305,7 @@
 					(justify right)
 				)
 			)
-			(property "Footprint" "OptoDevice:OnSemi_CASE100CY"
+			(property "Footprint" "OptoDevice:OnSemi_CASE100AQ"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -198,7 +327,7 @@
 					)
 				)
 			)
-			(property "Description" "Miniature Reflective Optical Object Sensor, SMD-4"
+			(property "Description" "Miniature Reflective Optical Object Sensor, DIP-like THT-package"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -220,7 +349,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "OnSemi*CASE100CY*"
+			(property "ki_fp_filters" "OnSemi*CASE100AQ*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -231,7 +360,7 @@
 					)
 				)
 			)
-			(symbol "QRE1113GR_0_1"
+			(symbol "QRE1113_0_1"
 				(polyline
 					(pts
 						(xy -5.08 -2.54) (xy -3.175 -2.54) (xy -3.175 2.54) (xy -5.08 2.54)
@@ -557,7 +686,7 @@
 					)
 				)
 			)
-			(symbol "QRE1113GR_1_1"
+			(symbol "QRE1113_1_1"
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -888,15 +1017,70 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 95.25 85.09)
+		(end 158.75 123.19)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6fbed31c-d341-423a-8a6c-cdba92c6caf0")
+	)
+	(rectangle
+		(start 165.4175 85.09)
+		(end 202.8825 123.19)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d9bbe585-442d-4984-84b4-885c89f95e17")
+	)
+	(text "QRE1113GR"
+		(exclude_from_sim no)
+		(at 153.924 122.174 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.onsemi.com/pdf/datasheet/qre1113-d.pdf")
+		)
+		(uuid "96ee264e-8032-4bfe-8ae8-d7ee1eed7a31")
+	)
+	(text "Mount Hole"
+		(exclude_from_sim no)
+		(at 179.07 83.058 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "a8759b02-a5d9-4af3-b7c3-f6fa6a6cb562")
+	)
+	(text "Senzor\n"
+		(exclude_from_sim no)
+		(at 103.632 83.312 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+		)
+		(uuid "ed5efbbd-c4cf-4410-9584-40d13f1665aa")
+	)
 	(junction
-		(at 91.44 66.04)
+		(at 135.89 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "512d63e4-18cd-4479-aff4-74c872a5401c")
 	)
 	(wire
 		(pts
-			(xy 90.17 66.04) (xy 91.44 66.04)
+			(xy 134.62 102.87) (xy 135.89 102.87)
 		)
 		(stroke
 			(width 0)
@@ -906,7 +1090,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 71.12) (xy 73.66 72.39)
+			(xy 118.11 107.95) (xy 118.11 109.22)
 		)
 		(stroke
 			(width 0)
@@ -916,7 +1100,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 66.04) (xy 102.87 66.04)
+			(xy 144.78 102.87) (xy 147.32 102.87)
 		)
 		(stroke
 			(width 0)
@@ -926,7 +1110,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 66.04) (xy 92.71 66.04)
+			(xy 135.89 102.87) (xy 137.16 102.87)
 		)
 		(stroke
 			(width 0)
@@ -936,7 +1120,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 71.12) (xy 91.44 72.39)
+			(xy 135.89 107.95) (xy 135.89 109.22)
 		)
 		(stroke
 			(width 0)
@@ -946,7 +1130,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 66.04) (xy 63.5 63.5)
+			(xy 107.95 102.87) (xy 107.95 100.33)
 		)
 		(stroke
 			(width 0)
@@ -956,7 +1140,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 71.12) (xy 91.44 71.12)
+			(xy 134.62 107.95) (xy 135.89 107.95)
 		)
 		(stroke
 			(width 0)
@@ -966,7 +1150,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 69.85) (xy 91.44 66.04)
+			(xy 135.89 106.68) (xy 135.89 102.87)
 		)
 		(stroke
 			(width 0)
@@ -976,7 +1160,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 71.12) (xy 73.66 71.12)
+			(xy 119.38 107.95) (xy 118.11 107.95)
 		)
 		(stroke
 			(width 0)
@@ -986,7 +1170,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 66.04) (xy 74.93 66.04)
+			(xy 118.11 102.87) (xy 119.38 102.87)
 		)
 		(stroke
 			(width 0)
@@ -996,7 +1180,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 69.85) (xy 91.44 69.85)
+			(xy 147.32 106.68) (xy 135.89 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1006,7 +1190,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 66.04) (xy 63.5 66.04)
+			(xy 110.49 102.87) (xy 107.95 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1016,7 +1200,17 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 66.04) (xy 102.87 63.5)
+			(xy 184.15 105.41) (xy 184.15 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed8891c9-7f62-4fea-a2b1-28a04122134b")
+	)
+	(wire
+		(pts
+			(xy 147.32 102.87) (xy 147.32 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1025,7 +1219,7 @@
 		(uuid "f38953e2-4ccf-4871-a9ed-d0effbca7418")
 	)
 	(label "QRE-Back"
-		(at 102.87 69.85 180)
+		(at 147.32 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1035,94 +1229,8 @@
 		(uuid "c17f2b84-ad00-4577-9177-7edba64a24e9")
 	)
 	(symbol
-		(lib_id "Sensor_Proximity:QRE1113GR")
-		(at 82.55 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "10b8cb54-efc4-428f-8594-44de4b449f07")
-		(property "Reference" "U1"
-			(at 82.55 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "QRE1113GR"
-			(at 82.55 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "OptoDevice:OnSemi_CASE100CY"
-			(at 82.55 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF"
-			(at 82.55 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Miniature Reflective Optical Object Sensor, SMD-4"
-			(at 82.55 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0e71c76e-aeb3-4db5-bfe7-9b7148d7b412")
-		)
-		(pin "4"
-			(uuid "a5964e34-37bc-47bf-8aa3-205d06d987f9")
-		)
-		(pin "1"
-			(uuid "ba765421-8e0c-4195-a1dd-55c457ada0bd")
-		)
-		(pin "3"
-			(uuid "9be59208-3e1b-4d93-9973-95520fbe3b73")
-		)
-		(instances
-			(project "QRE-Board_BackSen"
-				(path "/b87002f5-a8a1-4b67-96d0-06c828c340f4"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 102.87 63.5 0)
+		(at 147.32 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1133,7 +1241,7 @@
 		(fields_autoplaced yes)
 		(uuid "45895c3a-deb4-4dcb-a87d-049e409a2cd4")
 		(property "Reference" "#PWR04"
-			(at 102.87 67.31 0)
+			(at 147.32 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1144,7 +1252,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 102.87 58.42 0)
+			(at 147.32 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1154,7 +1262,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 63.5 0)
+			(at 147.32 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1165,7 +1273,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 63.5 0)
+			(at 147.32 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1176,7 +1284,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 102.87 63.5 0)
+			(at 147.32 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1200,7 +1308,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 72.39 0)
+		(at 118.11 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1211,7 +1319,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e7fd875-02d9-4dcf-abf8-b1d31302a96c")
 		(property "Reference" "#PWR01"
-			(at 73.66 78.74 0)
+			(at 118.11 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1222,7 +1330,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 77.47 0)
+			(at 118.11 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1232,7 +1340,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 72.39 0)
+			(at 118.11 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1243,7 +1351,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 72.39 0)
+			(at 118.11 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1254,7 +1362,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 72.39 0)
+			(at 118.11 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1278,7 +1386,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 91.44 72.39 0)
+		(at 135.89 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1289,7 +1397,7 @@
 		(fields_autoplaced yes)
 		(uuid "694d18da-2a93-4d8d-a1aa-fdea5438d737")
 		(property "Reference" "#PWR03"
-			(at 91.44 78.74 0)
+			(at 135.89 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1300,7 +1408,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.44 77.47 0)
+			(at 135.89 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1310,7 +1418,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 72.39 0)
+			(at 135.89 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1321,7 +1429,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 72.39 0)
+			(at 135.89 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1332,7 +1440,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 91.44 72.39 0)
+			(at 135.89 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1356,7 +1464,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 63.5 63.5 0)
+		(at 107.95 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1367,7 +1475,7 @@
 		(fields_autoplaced yes)
 		(uuid "73c4305e-8bcb-4f11-9f98-62ec1a377e76")
 		(property "Reference" "#PWR02"
-			(at 63.5 67.31 0)
+			(at 107.95 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1378,7 +1486,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 63.5 58.42 0)
+			(at 107.95 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1388,7 +1496,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 63.5 0)
+			(at 107.95 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1399,7 +1507,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 63.5 0)
+			(at 107.95 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1410,7 +1518,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 63.5 63.5 0)
+			(at 107.95 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1433,8 +1541,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Sensor_Proximity:QRE1113")
+		(at 127 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90d1a54a-64c1-4332-9904-2516b01b99ae")
+		(property "Reference" "U1"
+			(at 127 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "QRE1113"
+			(at 127 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OptoDevice:OnSemi_CASE100AQ"
+			(at 127 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF"
+			(at 127 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Miniature Reflective Optical Object Sensor, DIP-like THT-package"
+			(at 127 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f7642a53-532f-422d-b028-9f6b116003f5")
+		)
+		(pin "4"
+			(uuid "b5e1b861-7737-4523-a026-dcfb95fa5176")
+		)
+		(pin "2"
+			(uuid "9774dd19-1930-4f26-b445-3ec41529ecd4")
+		)
+		(pin "3"
+			(uuid "a8fe529c-65c3-4950-bffb-3b71c4eee1ce")
+		)
+		(instances
+			(project "QRE-Board_BackSen"
+				(path "/b87002f5-a8a1-4b67-96d0-06c828c340f4"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 96.52 66.04 90)
+		(at 140.97 102.87 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1445,7 +1639,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad0cce8e-130f-4a20-9c47-973a41276734")
 		(property "Reference" "R2"
-			(at 96.52 59.69 90)
+			(at 140.97 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1455,7 +1649,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 96.52 62.23 90)
+			(at 140.97 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1465,7 +1659,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 96.52 67.818 90)
+			(at 140.97 104.648 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1476,7 +1670,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 66.04 0)
+			(at 140.97 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1487,7 +1681,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 96.52 66.04 0)
+			(at 140.97 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1513,8 +1707,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 69.85 66.04 90)
+		(lib_id "power:GND")
+		(at 184.15 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1523,9 +1717,10 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fbfeaecb-6e62-42dc-925d-3ef3232821d6")
-		(property "Reference" "R1"
-			(at 69.85 59.69 90)
+		(uuid "d0261737-8e9f-44ac-ab10-3e413fc9edae")
+		(property "Reference" "#PWR05"
+			(at 184.15 111.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1534,8 +1729,8 @@
 				)
 			)
 		)
-		(property "Value" "100R"
-			(at 69.85 62.23 90)
+		(property "Value" "GND"
+			(at 184.15 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1544,8 +1739,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 69.85 67.818 90)
+		(property "Footprint" ""
+			(at 184.15 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1556,7 +1751,163 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 66.04 0)
+			(at 184.15 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 184.15 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8479c6e0-1815-448b-84a4-e498eaac7e21")
+		)
+		(instances
+			(project "QRE-Board_BackSen"
+				(path "/b87002f5-a8a1-4b67-96d0-06c828c340f4"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 184.15 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eaf243eb-79fe-4831-bd03-5adf5e688acd")
+		(property "Reference" "H1"
+			(at 186.69 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 186.69 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 184.15 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 184.15 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e0ac516-6f14-4a7e-99a0-d4619a169c57")
+		)
+		(instances
+			(project "QRE-Board_BackSen"
+				(path "/b87002f5-a8a1-4b67-96d0-06c828c340f4"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 114.3 102.87 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbfeaecb-6e62-42dc-925d-3ef3232821d6")
+		(property "Reference" "R1"
+			(at 114.3 96.52 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 114.3 99.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 114.3 104.648 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1567,7 +1918,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 69.85 66.04 0)
+			(at 114.3 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

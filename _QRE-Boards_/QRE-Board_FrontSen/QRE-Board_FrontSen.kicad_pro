@@ -472,7 +472,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -533,7 +533,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerbers/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -657,7 +657,7 @@
         "uuid": "9463a9e8-99de-4834-ac5c-2cbd238530fc"
       }
     ],
-    "used_designators": "",
+    "used_designators": "TPL1,TPR1",
     "variants": []
   },
   "sheets": [
