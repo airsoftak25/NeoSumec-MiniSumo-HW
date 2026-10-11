@@ -841,6 +841,18 @@
 		(layer "Edge.Cuts")
 		(uuid "7fc3dc4c-69c3-4392-8c11-3ac45a7df9bd")
 	)
+	(gr_text "BTM"
+		(at 151.25 108.5 0)
+		(layer "B.Cu")
+		(uuid "6d103ec3-f7a3-4760-8151-0cb672194950")
+		(effects
+			(font
+				(size 1.25 1.25)
+				(bold yes)
+			)
+			(justify mirror)
+		)
+	)
 	(dimension
 		(type orthogonal)
 		(layer "Dwgs.User")

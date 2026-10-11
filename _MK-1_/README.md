@@ -6,7 +6,7 @@ This folder contains all files of PCB design for our first MiniSumo robot **MK-1
 # Features for PCB 
 This list is orientational. Some of the features maybe will not apeare on a pcb.
 
-* **2 or 3 mounting holes**
+* **2 mounting holes**
 * **LED on io**
   * **RGB LED prog**
 * **Buttons on io**
